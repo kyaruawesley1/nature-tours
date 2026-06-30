@@ -1,6 +1,54 @@
 <?php require_once 'includes/header.php'; ?>
 <?php require_once 'includes/db.php'; ?>
 
+<style>
+    /* --- Safari Card Button Styling --- */
+    .card-btn-group {
+        display: flex;
+        gap: 10px;
+        margin-top: auto;
+        padding-top: 15px;
+        width: 100%;
+    }
+    
+    .btn-card-outline, .btn-card-solid {
+        flex: 1 1 50%; /* Forces both buttons to be exactly 50% width */
+        padding: 12px 5px;
+        text-align: center;
+        font-size: 0.85rem;
+        font-weight: 600;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out; /* Adds the smooth hover animation */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1.2;
+    }
+
+    /* View Full Program Button (Outline) */
+    .btn-card-outline {
+        color: var(--earth-brown) !important;
+        border: 2px solid var(--earth-brown) !important;
+        background: transparent !important;
+    }
+    .btn-card-outline:hover {
+        background: var(--earth-brown) !important;
+        color: white !important;
+    }
+
+    /* Book Now Button (Solid Orange) */
+    .btn-card-solid {
+        color: white !important;
+        background: var(--primary-orange) !important;
+        border: 2px solid var(--primary-orange) !important;
+    }
+    .btn-card-solid:hover {
+        background: transparent !important;
+        color: var(--primary-orange) !important;
+    }
+</style>
+
 <section class="hero" style="background: linear-gradient(rgba(62,39,35,0.8), rgba(62,39,35,0.8)), url('images/image_0.png') center/cover; height: 50vh; display: flex; align-items: center; justify-content: center;">
     <div style="text-align: center;">
         <h1 style="color: var(--primary-yellow); font-size: 3rem;" class="animate-up">Our Safari Packages</h1>
@@ -30,8 +78,9 @@
                     <li>✅ Arusha Start & Finish</li>
                 </ul>
                 
-                <div style="margin-top: auto;">
-                    <a href="booking.php?trip=3-Day+Safari" class="btn" style="width: 100%; text-align: center;">Book Now</a>
+                <div class="card-btn-group">
+                    <a href="3-days-tanzania.php" class="btn-card-outline">View Full Program</a>
+                    <a href="booking.php?tour=3-days-tanzania" class="btn-card-solid">Book Now</a>
                 </div>
             </div>
         </div>
@@ -55,8 +104,9 @@
                     <li>✅ Scenic Great Rift Valley</li>
                 </ul>
 
-                <div style="margin-top: auto;">
-                    <a href="booking.php?trip=4-Day+Safari" class="btn" style="width: 100%; text-align: center;">Book Now</a>
+                <div class="card-btn-group">
+                    <a href="4-days-tanzania.php" class="btn-card-outline">View Full Program</a>
+                    <a href="booking.php?tour=4-days-tanzania" class="btn-card-solid">Book Now</a>
                 </div>
             </div>
         </div>
@@ -66,9 +116,9 @@
                 <img src="images/image6.JPG" alt="6 Day Safari" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s;">
             </div>
             <div style="padding: 25px; flex-grow: 1; display: flex; flex-direction: column;">
-                <h3 style="color: var(--earth-brown);">6-Day Big Five Adventure</h3>
+                <h3 style="color: var(--earth-brown);">6 Days Best of Tanzania Safari</h3>
                 <div style="display: flex; justify-content: space-between; align-items: center; margin: 15px 0;">
-                    <span style="font-size: 1.2rem; color: var(--primary-orange); font-weight: bold;">From $2,146 <small style="font-size: 0.8rem; color: #666;">/ pp</small></span>
+                    <span style="font-size: 1.2rem; color: var(--primary-orange); font-weight: bold;">From $1,990 <small style="font-size: 0.8rem; color: #666;">/ pp</small></span>
                     <span style="background: var(--earth-brown); color: white; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem;">6 Days</span>
                 </div>
                 <p style="color: #666; font-size: 0.95rem; margin-bottom: 15px;">The ultimate wildlife experience. Includes the legendary Serengeti National Park, Ngorongoro Crater, and Tarangire.</p>
@@ -80,8 +130,9 @@
                     <li>✅ Luxury Camp Accommodation</li>
                 </ul>
 
-                <div style="margin-top: auto;">
-                    <a href="booking.php?trip=6-Day+Serengeti+Safari" class="btn" style="width: 100%; text-align: center;">Book Now</a>
+                <div class="card-btn-group">
+                    <a href="6-days-tanzania.php" class="btn-card-outline">View Full Program</a>
+                    <a href="booking.php?tour=6-days-tanzania" class="btn-card-solid">Book Now</a>
                 </div>
             </div>
         </div>
@@ -105,8 +156,9 @@
                     <li>✅ Legendary Beach Resort Stay</li>
                 </ul>
 
-                <div style="margin-top: auto;">
-                    <a href="booking.php?trip=7-Day+Bush+and+Beach" class="btn" style="width: 100%; text-align: center;">Book Now</a>
+                <div class="card-btn-group">
+                    <a href="7-days-bush-beach.php" class="btn-card-outline">View Full Program</a>
+                    <a href="booking.php?tour=7-days-bush-beach" class="btn-card-solid">Book Now</a>
                 </div>
             </div>
         </div>
@@ -130,8 +182,9 @@
                     <li>✅ Airport Transfers Included</li>
                 </ul>
 
-                <div style="margin-top: auto;">
-                    <a href="booking.php?trip=6-Day+Zanzibar+Escape" class="btn" style="width: 100%; text-align: center;">Book Now</a>
+                <div class="card-btn-group">
+                    <a href="6-days-zanzibar.php" class="btn-card-outline">View Full Program</a>
+                    <a href="booking.php?tour=6-days-zanzibar" class="btn-card-solid">Book Now</a>
                 </div>
             </div>
         </div>
